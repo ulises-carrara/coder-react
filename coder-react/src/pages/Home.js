@@ -3,7 +3,7 @@ import ItemListContainer from "../componentes/ItemListContainer/ItemListContaine
 function Home () {
     return(
         <>
-         <ItemListContainer seccion="Ofertas"/>
+         <ItemListContainer seccion="Mas vendidos"/>
         </>
     )
 }
