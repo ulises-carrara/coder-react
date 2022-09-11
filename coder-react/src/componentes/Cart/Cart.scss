@@ -1,0 +1,51 @@
+.cart-container {
+    align-items: flex-start;
+    h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    img{
+        width: 100%;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .item-cart-product{
+        display: flex;
+
+    }
+    .cart-detail{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+   
+}
+.empty_cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button{
+        margin: 20px;
+        border: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+    .btn_delete-all{
+        position: fixed;
+        top: 150px;
+        right: 250px; 
+        p{
+            position: fixed;
+            top: 200px;
+            right: 225px;   
+        }
+    }

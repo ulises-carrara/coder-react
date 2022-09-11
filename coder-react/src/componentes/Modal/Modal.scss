@@ -1,0 +1,46 @@
+.modal-custom {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    width: 25vw;
+    height: 55vh;
+    box-shadow: 1px 5px 5px #00000047;
+    border-radius: 5px;
+    padding: 20px;
+    overflow: hidden;
+    h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+}
+.modal-custom svg {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    cursor: pointer;
+}
+.modal-custom img {
+    width: 100%;
+}
+
+.modal-custom form{
+    display: flex;
+    flex-direction: column;
+    h3{
+        text-align: center;
+    }
+    button{
+        margin: 20px;
+        border: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: gray;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.ItemListContainer{
+    float: left;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    border: 1px solid #000;
+}
+.title{
+    text-align: center;
+    text-decoration: underline;
+}
