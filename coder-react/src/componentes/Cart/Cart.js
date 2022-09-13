@@ -22,7 +22,6 @@ function Cart() {
         const collectionOrder = collection(db, "ordenes")
         const orderDoc = await addDoc(collectionOrder, newOrder)
         setSucces(orderDoc.id)
-        console.log("era un cero?", orderDoc);
     }
 
     const [order, setOrder] = useState({

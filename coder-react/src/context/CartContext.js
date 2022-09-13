@@ -11,13 +11,11 @@ const CartProvider =({children})=>{
         let isInCart=cartProduct.find(cartitem => cartitem.id===product.id)
         if(!isInCart){
             setPrecioTotal(precioTotal + product.price)
-            console.log("precio total ", precioTotal);
             setTotalProducts(totalProducts+1)
             return setCartProduct(cartProduct=>[...cartProduct, product])
         }
     }
     const deleteProduct = (product) =>{
-        console.log("se elimino", product);
         setPrecioTotal(precioTotal - product.price)
         setTotalProducts(totalProducts-1)
         setCartProduct(cartProduct.filter((productCart)=>productCart.id !==product.id))
@@ -39,7 +37,7 @@ const CartProvider =({children})=>{
         precioTotal
        
     }
-   console.log("producto", cartProduct);
+
  
     return(
     <CartContext.Provider value={data}>
